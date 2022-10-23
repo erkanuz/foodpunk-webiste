@@ -1,0 +1,119 @@
+.recipes {
+    user-select: none;
+}
+
+.recipes_title{
+    font-size: 3.5rem;
+}
+
+.recipes_subtitle {
+    font-size: var(--sub-size);
+    padding-bottom: 2rem;
+}
+
+.recipes_title, .recipes_subtitle {
+    font-style: italic;
+}
+
+.recipes_filter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.filter {
+    height: 2rem;
+    padding: 0 1rem;
+    cursor: pointer;
+}
+
+.filter {
+    background-color: transparent;
+    color: var(--second-color);
+    font-weight: bold;
+    font-style: italic;
+    border: none;
+    cursor: pointer;
+}
+
+.active {
+    background: var(--second-color);
+    color: var(--first-color);
+}
+
+.none {
+    background-color: transparent;
+    color: var(--second-color);
+    font-weight: bold;
+    font-style: italic;
+    border: none;
+}
+
+.recipes_contaier {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 2rem 0rem 2rem 0rem;
+}
+
+.recipes_card {
+    position: relative;
+    min-height: 15rem;
+    border-radius: 2rem;
+    overflow: hidden;
+}
+
+.recipes_image {
+    border-radius: 2rem;
+    width: 100%; height: 100%;
+    object-fit: cover;
+}
+
+.mask {
+    background: cornflowerblue;
+    position: absolute;
+    left: 0; top: 0;
+    height: 95%; width: 100%;
+    border-radius: 2rem;
+    opacity: 0;
+    transition: .4s;
+}
+
+.recipes_card:hover .mask {
+    opacity: .9;
+}
+
+.recipes_card:hover .recipes_names {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.recipes_names {
+    cursor: pointer;
+    position: absolute;
+    z-index: 10;
+    color: azure;
+    font-weight: bold;
+    bottom: 50%;
+    width: 100%;
+    font-size: var(--h3-font-size);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: .4s;
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+@media screen and (min-width: 280px) and (max-width: 540px) {
+    .recipes_contaier {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (min-width: 540px) and (max-width: 968px) {
+    .recipes_contaier {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

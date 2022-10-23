@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Tai+Heritage+Pro:wght@400;700&display=swap');
+
+:root {
+    /*== Header height ==*/
+    --header-height: 3rem;
+
+    /*== Colors ==*/
+    --first-color: white;
+    --second-color: black;
+    --third-color: #2C2B2B;
+    
+    /*Container width*/
+    --container-width-lg: 75%;
+    --container-width-md: 86%;
+    --container-width-sm: 90%;
+    
+    /*== Font & Font size ==*/
+    --body-font: 'Tai Heritage Pro', serif;
+    
+    --big-boy-size: 3.5rem;
+    --big-size: 2.5rem; /*40*/
+    
+    --title-size: 2.25rem; /*36*/
+    --subtitle-size: 1.25rem; /*20*/
+    --sub-size: 1rem; /*16*/
+    
+    --h1-font-size: 1.5rem; /*24*/
+    --h2-font-size: 1.25rem; /*20*/
+    --h3-font-size: 1.125rem; /*18*/
+        
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem; 
+    --smaller-font-size: .75rem; 
+    
+    /*== z index ==*/
+    --z-tooltip: 10;
+    --z-fixed: 100;
+    --z-modal: 1000;
+}
+
+*,::before,::after {
+    box-sizing: border-box;
+    padding: 0; margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.App {
+    background-color: var(--first-color);
+    transition: .8s;
+}
+
+.body {
+    margin: 0 0 0 0;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--first-color);
+    color: var(--second-color);
+}
+
+ul, a {
+  list-style: none;
+  text-decoration: none;
+}
+
+h2, h3, h4, h5 {
+    color: var(--second-color);
+    text-align: center;
+    font-weight: 500;
+  }
+
+.img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* ====== Layout ======*/
+.container {
+    width: var(--container-width-lg);
+    margin: 0 auto;
+  }
+  
+  .grid {
+    display: grid;
+    gap: 1.5rem;
+  }
+  
+  .main {
+    overflow: hidden;
+  }
+
+  .section {
+    padding: 4.5rem 0 1rem;
+  }
+
+  @media screen and (max-width: 360px) {
+    .section {
+      padding: 3.5rem 0 1rem;
+    }
+  }
+
+  @media screen and (min-width: 767px) {
+    .section {
+        padding: 6rem 0 2rem;
+      }
+  }
+
+  @media screen and (min-width: 1024px) {
+    .container {
+        margin-left: auto;
+        margin-right: auto;
+      }
+  }

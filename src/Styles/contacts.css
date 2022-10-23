@@ -1,0 +1,64 @@
+.contact {
+    user-select: none;
+}
+
+.ctt {
+    font-size: 3.5rem;
+}
+
+.cstt {
+    font-size: var(--sub-size);
+}
+
+.ctt, .cstt {
+    font-style: italic;
+}
+
+.contact_container {
+    display: flex;
+    justify-content: center;
+}
+
+.subs_form {
+    background-color: var(--first-color);
+}
+
+.subs_input {
+    margin-top: 3rem;
+    padding: 1rem 2rem;
+    background-color: var(--first-color);
+    color: var(--second-color);
+}
+
+.subs_input::placeholder {
+    color: var(--second-color);
+    font-weight: bold;
+}
+
+.subs_button {
+    cursor: pointer;
+    display: inline-block;
+    background-color: var(--third-color);
+    color: var(--first-color);
+    font-weight: bold;
+    padding: 1rem 2rem;
+}
+
+@media screen and (max-width:380px) {
+    .subs_input {
+        width: 50%;
+        padding: 1rem 1rem;
+    }
+}
+
+@media screen and (min-width:380px) and (max-width: 600px) {
+
+    .subs_input {
+        width: 65%;
+        padding: 1rem 1rem;
+    }
+
+    .subs_button {
+        padding: 1rem 1rem;
+    }
+}

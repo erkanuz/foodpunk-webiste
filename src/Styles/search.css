@@ -1,0 +1,59 @@
+.searched {
+    user-select: none;
+    padding: 4.5rem 0 0rem;
+}
+
+.recipes_cards {
+    position: relative;
+    min-height: 15rem;
+    border-radius: 2rem;
+    overflow: hidden;
+}
+
+.recipes_image {
+    width: 100%; height: 100%;
+    object-fit: cover;
+}
+
+.masks {
+    background: cornflowerblue;
+    position: absolute;
+    left: 0; top: 0;
+    height: 99%; width: 100%;
+    border-radius: 2rem;
+    opacity: 0;
+    transition: .4s;
+}
+
+.recipes_cards:hover .masks {
+    opacity: .9;
+}
+
+.recipes_cards:hover .r_name {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.r_name {
+    cursor: pointer;
+    position: absolute;
+    z-index: 10;
+    color: azure;
+    font-weight: bold;
+    bottom: 50%;
+    width: 100%;
+    font-size: var(--h3-font-size);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: .4s;
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+.Searched_name {
+    font-style: italic;
+    font-size: var(--title-size);
+    text-decoration: underline;
+}

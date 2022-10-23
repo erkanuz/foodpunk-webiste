@@ -1,0 +1,188 @@
+.home {
+    user-select: none;
+}
+
+.Wraper {
+    margin: 5rem 0rem;
+}
+
+.Card {
+    min-height: 35rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.h_img {
+    position: absolute;
+    left: 0;
+    width: 100%; height: 100%;
+    object-fit: cover;
+}
+
+.h_title {
+    position: absolute;
+    z-index: 10;
+    left: 50%; bottom: 0%;
+    transform: translate(-50%, 0%);
+    color: white;
+    text-align: center;
+    font-weight: 600;
+    font-size: 3rem;
+    font-style: italic;
+    height: 60%;
+    justify-content: center;
+    align-items: center;
+}
+
+.h_title, .h_subtitle {
+    text-shadow: 3px 3px 0 #f49b90,
+                 6px 6px 0 #1eb1dd,
+                 9px 9px 0 #ee6352;
+}
+
+.pagi {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dots {
+    background: #2C2B2B;
+    width: 1rem; height: 1rem;
+    border-radius: 50%;
+    place-items: center;
+    position: relative;
+    margin: 0rem .5rem 0rem;
+}
+
+.searchbar {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin: 3rem 0rem 2rem;
+}
+
+.search {
+    width: 50%;
+    padding: .8rem 1rem;
+    padding-left: 2.5rem;
+    border-radius: 1rem;
+    border: none;
+    outline: none;
+    background-color: #2C2B2B;
+    color: white;
+}
+
+.search::placeholder {
+    color: white;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.icon {
+    position: absolute;
+    left: 26%;
+    width: 1rem;
+    height: 1rem;
+    color: white;
+    cursor: pointer;
+}
+
+.fit::before {
+    position: absolute;
+    content: "";
+    width: 20%; height: 5px;
+    background: #2C2B2B;
+    left: 18%;
+}
+
+.fit::after {
+    position: absolute;
+    content: "";
+    width: 20%; height: 5px;
+    background: #2C2B2B;
+    right: 18%;
+}
+
+.fit {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ou {
+    background: #2C2B2B;
+    width: 5rem;
+    border-radius: 50%;
+    aspect-ratio: 1;
+    display: grid;
+    place-items: center;
+    position: relative;
+    margin: .5rem;
+}
+
+.inn {
+    aspect-ratio: 1;
+    background: #2C2B2B;
+    width: 4rem;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+.hamb {
+    color: white;
+    position: absolute;
+}
+
+.i {
+    transform: rotate(45deg);
+}
+
+@media screen and (min-width: 280px) and (max-width:600px) {
+    .Card {
+        min-height: 20rem;
+    }
+
+    .ou {
+        width: 4rem;
+    }
+    .inn {
+        width: 3rem;
+    }
+    .hamb {
+        padding: .3rem;
+    }
+
+    .h_title, .h_subtitle {
+        text-shadow: 2px 2px 0 #f49b90,
+                     4px 4px 0 #1eb1dd,
+                     6px 6px 0 #ee6352;
+    }
+
+    .h_title {
+        font-size: 1rem;
+    }
+
+    .icon {
+        left: 5%;
+    }
+
+    .search {
+        width: 100%;
+    }
+
+    .fit::before , .fit::after {
+        visibility: hidden;
+    }
+  }
+
+  @media screen and (min-width: 600px) and (max-width:1600px) {
+    .fit::before {
+        left: 5%;
+    }
+
+    .fit::after {
+        right: 5%;
+    }
+  }

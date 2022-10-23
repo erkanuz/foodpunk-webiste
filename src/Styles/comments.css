@@ -1,0 +1,60 @@
+.comments {
+    user-select: none;
+}
+
+.ct{
+    font-size: 3.5rem;
+}
+
+.cst {
+    font-size: var(--sub-size);
+    padding-bottom: 2rem;
+}
+
+.ct, .cst {
+    font-style: italic;
+}
+
+.comments_container {
+    color: var(--first-color);
+    background-color: var(--third-color);
+}
+
+.test_box {
+    line-height: 1rem;
+    padding: 1.25rem 2rem;
+    border-radius: 1.5rem;
+}
+
+.t_img {
+    width: 100%;
+    border-radius: 1rem;
+    margin-bottom: .5rem;
+}
+
+.t_name {
+    color: var(--first-color);
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: .25rem;
+}
+
+.t_des {
+    text-align: center;
+    font-size: .75rem;
+}
+
+.ss {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: .5rem 0rem .5rem 0rem;
+}
+
+.mySwiper {
+    width: 100%;
+}
+
+.swiper-pagination {
+    visibility: hidden;
+}
