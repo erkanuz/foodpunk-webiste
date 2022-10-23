@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/erkanuz/foodpunk-webiste/static/css/main.d874867b.css",
+    "main.js": "/erkanuz/foodpunk-webiste/static/js/main.6b6d4c48.js",
+    "index.html": "/erkanuz/foodpunk-webiste/index.html",
+    "main.d874867b.css.map": "/erkanuz/foodpunk-webiste/static/css/main.d874867b.css.map",
+    "main.6b6d4c48.js.map": "/erkanuz/foodpunk-webiste/static/js/main.6b6d4c48.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d874867b.css",
+    "static/js/main.6b6d4c48.js"
+  ]
+}
